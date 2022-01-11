@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+:root {
+    --cor1: #3FB1DC;
+    --cor2: #413E66;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color: #E5E5E5;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 0px 90px 0px 90px;
+}
+
+.cabecalho-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: var(--cor2);
+    font-size: 35px;
+    width: 100%;
+}
+
+a:visited, a:active {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor2);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.conteudo {
+    min-height: 100vh;
+    margin-bottom: 48px;
+    margin: 0px 10px 0px 10px;
+}
+
+.conteudo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.conteudo-principal-escrito {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--cor2);
+}
+
+h1 > span {
+    color: var(--cor1);
+}
+
+.div-botao {
+    display: flex;
+}
+
+
