@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap');
 
 :root {
     --cor1: #3FB1DC;
@@ -20,11 +20,10 @@ body {
 
 .cabecalho {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    margin: 0px 90px 0px 90px;
+    margin: 10px 90px 0px 90px;
 }
 
 .cabecalho-title {
@@ -54,25 +53,31 @@ a:visited, a:active {
     text-decoration-line: none;
 }
 
-.conteudo {
-    min-height: 100vh;
-    margin: 90px 10px 0px 10px;
+.nav-item:hover {
+    color: var(--cor1);
 }
 
-.conteudo-principal {
+.container {
+    min-height: 100vh;
+    margin: 140px 10px 0px 10px;
+}
+
+.main-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 190px;
+    gap: 70px;
 }
 
-.div-principal{
+.div-main{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 22px;
 
 }
 
-.conteudo-principal-escrito {
+.main-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 45px;
@@ -89,7 +94,8 @@ button {
 }
 
 .botao-top {
-    margin-right: 50px;
+    display: flex;
+    gap: 15px;
 }
 
 #botao-saibamais {
@@ -110,6 +116,29 @@ button {
     font-size: 15px;
 }
 
+.container-about {
+    display: flex;
+    justify-content: center;
+    padding-top: 220px;
+}
+
+.div-about {
+  text-align: center;
+}
+
+#text-about {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--cor2);
+}
+
+#p-about {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cor2);
+}
 
 
 
