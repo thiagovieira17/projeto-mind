@@ -33,6 +33,7 @@ body {
     color: var(--cor2);
     font-size: 35px;
     width: 100%;
+    margin-left: 80px;
 }
 
 a:visited, a:active {
@@ -49,10 +50,13 @@ a:visited, a:active {
     font-size: 14px;
 }
 
+.nav-item {
+    text-decoration-line: none;
+}
+
 .conteudo {
     min-height: 100vh;
-    margin-bottom: 48px;
-    margin: 0px 10px 0px 10px;
+    margin: 90px 10px 0px 10px;
 }
 
 .conteudo-principal {
@@ -70,7 +74,7 @@ a:visited, a:active {
 
 .conteudo-principal-escrito {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 45px;
     color: var(--cor2);
 }
@@ -79,8 +83,33 @@ h1 > span {
     color: var(--cor1);
 }
 
-.div-botao {
-    display: flex;
+button {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.botao-top {
+    margin-right: 50px;
+}
+
+#botao-saibamais {
+    background-color: var(--cor1);
+    width: 145px;
+    height: 38px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+#botao-faq {
+    background-color: #0A98C0;
+    width: 97px;
+    height: 38px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+
 
 
