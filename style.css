@@ -19,11 +19,14 @@ body {
 }
 
 .cabecalho {
+    background-color: #E5E5E5;
+    box-shadow: 0px 3px 9px -6px rgba(0, 0, 0, 0.247);
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    margin: 10px 90px 0px 90px;
 }
 
 .cabecalho-title {
