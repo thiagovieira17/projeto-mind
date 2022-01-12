@@ -40,7 +40,7 @@ a:visited, a:active {
     text-decoration: none;
 }
 
-.cabecalho-menu {
+.menu {
     display: flex;
     gap: 32px;
     font-family: 'Montserrat', sans-serif;
@@ -282,3 +282,5 @@ footer > p {
     font-size: 13px;
     color: #00000094;
 }
+
+
