@@ -6,13 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIND HOST</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 </head>
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho-title">M I N D</h1>
         <nav class="menu">
             <a class="nav-item" href="#main-container">INÍCIO</a>
-            <a class="nav-item" href="#container-about">SOBRE</a>
+            <a class="nav-item" href="#about">SOBRE</a>
             <a class="nav-item" href="#faq">FAQ</a>
             <a class="nav-item" href="#">CONTATO</a>
         </nav>
@@ -31,7 +49,7 @@
                 <img src="image/3z.svg" alt="Servidor">
             </div> 
         </section>
-        <section class="container-about">
+        <section class="container-about" id="about">
             <div class="div-about">
                 <h2 id="text-about">Sobre</h2>
                 <p id="p-about">Aqui está algumas coisas sobre a nossa empresa, caso tenha dúvida<br>contate o suporte.
@@ -55,7 +73,7 @@
                 <p>Optamos em otimizar o máximo nossos resources para melhor experiência dos nossos cliente e para os jogadores do seu servidor.</p>
             </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="faq-text">
                 <h3>Perguntas que são frequentes</h3>
                 <p>Aqui estão as perguntas que os clientes mais perguntam para o nosso<br> atendimento de suporte.
