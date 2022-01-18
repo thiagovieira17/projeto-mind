@@ -7,23 +7,6 @@
     <title>MIND HOST</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
 </head>
 <body>
     <header class="cabecalho">
@@ -78,12 +61,13 @@ $(document).ready(function(){
                 <h3>Perguntas que são frequentes</h3>
                 <p>Aqui estão as perguntas que os clientes mais perguntam para o nosso<br> atendimento de suporte.
                 </p>
-            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi, natus provident mollitia sunt repellat corporis pariatur consequuntur fuga nulla fugiat minima placeat fugit dolores tenetur perferendis consequatur, cumque exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, et illum sit repellat nostrum tempora perspiciatis numquam fuga eligendi beatae, minus architecto esse doloremque perferendis. Porro quos incidunt nulla dolorem.</p>
         </section>
     </main>
     <footer>
         <h1>M I N D</h1>
         <p>© Copyright <strong>Mind</strong>. Todos direitos reservados.<br>Nosso email para contato: contato@mindresources.com.br</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
