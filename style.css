@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -239,10 +240,14 @@ button {
     width: 120px;
 }
 
-.faq {
+.faq-section {
+    padding-top: 10em;
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    padding-top: 300px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .faq-text {
@@ -262,6 +267,61 @@ button {
     font-size: 14px;
     padding: 10px 0px 30px 0px;
     color: var(--cor2);
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.solution {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.solution p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.faq.active .solution {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 footer {
